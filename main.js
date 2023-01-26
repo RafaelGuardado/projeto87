@@ -11,7 +11,7 @@ var blockImageObject= "";
 function newImage(getImage)
 {
     // para enviar imagens
-	fabric.Image.fromURL(get_image, function(Img){
+	fabric.Image.fromURL(getImage, function(Img){
 	blockImageObject= Img;
 	blockImageObject.scaleToWidth(blockImageWidth);
 	blockImageObject.scaleToHeight(blockImageHeight);
@@ -33,7 +33,7 @@ console.log(keyPressed);
 	if(keyPressed == '69') // adicione os códigos adequados às teclas
 	{
 		// enviar ranger escarlate
-		new_image('rr1.png');
+		newImage('rr1.png');
 		console.log("r");
 	}
 	if(keyPressed == '86')
